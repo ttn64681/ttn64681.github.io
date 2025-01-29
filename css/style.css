@@ -32,8 +32,6 @@ nav:hover {
     transition: all ease-in-out .1s;
 }
 
-
-
 nav a {
     text-decoration: transparent;
     color:#b2bdf0;
@@ -45,37 +43,6 @@ nav a:hover {
     color: #c6ad62;
     transition: all ease-in-out .2s;
 }
-
-@media (max-width: 600px) {
-    nav {
-      flex-direction: column;
-      align-items: flex-start; 
-      padding:1rem 2rem 2rem 2rem;
-    }
-
-    nav p {
-        margin-bottom: 0px;
-    }
-
-    .form_container {
-        padding:0rem;
-        margin:0rem 1.4rem 0rem 0rem;
-        text-align: center;
-    }
-
-    form input, form textarea {
-        width: 100%;
-    }
-
-    .form_button {
-        padding:0rem 0rem 0rem 1rem;
-    }
-    
-    form button {
-        width:100%;
-    }
-
-  }
 
 /* Footer Styles */
 footer {
@@ -404,6 +371,10 @@ dl dd{
     flex-flow: column nowrap;
 }
 
+label {
+    font-weight: 500;
+}
+
 .contact {
     margin:2rem;
     padding:3rem;
@@ -455,7 +426,7 @@ form input, form textarea {
     -webkit-appearance: none;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
-    font-weight: normal;
+    font-weight: none;
     font-style: none;
     margin:.2rem .2rem .2rem 0rem;
     padding: .5rem;
@@ -465,7 +436,7 @@ form input, form textarea {
 }
 
 form input:focus, form textarea:focus {
-    background-color: rgb(226, 250, 255);
+    background-color: rgb(227, 250, 255);
     color:#04046d;
     transform: scale(1.03);
     transition: all ease .1s;
@@ -510,3 +481,69 @@ form button:hover {
     font-weight: 800;
     font-style: normal;
 }
+
+@media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: center; 
+      padding:1rem 2rem 2rem 2rem;
+    }
+
+    nav p {
+        margin-bottom: 0px;
+    }
+
+    .splash {
+        
+    }
+
+    .splash h1 {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .splash img {
+        border:3px #362E54 solid;
+        border-radius:20%;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        height:auto;
+        width: 10rem;
+    }
+
+    #headshot:hover img{
+        border:3px #ffffff solid;
+    }
+
+    .contact {
+        border:#04046d 2px solid;
+        border-radius: 2rem;
+    }
+
+    .form {
+        margin-bottom: -1.5rem;
+    }
+
+    .form_container {
+        padding:0rem;
+        margin:0rem 1.4rem 0rem 0rem;
+        text-align: center;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+
+    .form_button {
+        padding:0rem 0rem 0rem 1rem;
+    }
+    
+    form button {
+        width:100%;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+
+  }
