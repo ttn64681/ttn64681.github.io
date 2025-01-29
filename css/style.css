@@ -20,30 +20,61 @@ nav {
     background-color: #362E54;
     padding: 1rem 2rem 1rem 2rem;
     color:#b2bdf0;
+    transition: all ease .1s;
 }
 
 nav p, nav a {
     font-size: 1rem;
 }
 
+nav:hover {
+    background-color: #463970;
+    transition: all ease-in-out .1s;
+}
+
+
+
 nav a {
     text-decoration: transparent;
     color:#b2bdf0;
-    transition: .5s;
+    transition: all ease-in-out .2s;
 }
 
 nav a:hover {
     text-decoration: underline;
-    color: #AC9E74;
-    animation: ease;
+    color: #c6ad62;
+    transition: all ease-in-out .2s;
 }
 
 @media (max-width: 600px) {
     nav {
-      flex-direction: column; /* Stack items vertically */
-      align-items: flex-start; /* Align to the left */
-      padding:2rem 0rem 2rem 2rem;
+      flex-direction: column;
+      align-items: flex-start; 
+      padding:1rem 2rem 2rem 2rem;
     }
+
+    nav p {
+        margin-bottom: 0px;
+    }
+
+    .form_container {
+        padding:0rem;
+        margin:0rem 1.4rem 0rem 0rem;
+        text-align: center;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+
+    .form_button {
+        padding:0rem 0rem 0rem 1rem;
+    }
+    
+    form button {
+        width:100%;
+    }
+
   }
 
 /* Footer Styles */
@@ -55,18 +86,25 @@ footer {
     padding: 1rem;
     color:#b2bdf0;
     margin-top:2.5rem;
+    transition: all ease .1s;
+}
+
+footer:hover {
+    background-color: #463970;
+    transition: all ease .1s;
 }
 
 footer a {
     text-decoration: transparent;
     color:#b2bdf0;
-    transition: .5s;
+    transition: all ease-in-out .2s;
 }
 
 footer a:hover {
     text-decoration: underline;
-    color: #AC9E74;
+    color: #c6ad62;
     animation: ease;
+    transition: all ease-in-out .2s;
 }
 
 #linkedin {
@@ -134,7 +172,7 @@ footer a:hover {
     border: 2px solid #362E54;
     border-radius: 50%;
     box-shadow: 0px 0px 15px rgb(121, 120, 120);
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out .2s;
 }
 
 .splash p {
@@ -213,19 +251,19 @@ section h2 {
 
 /* Paragraph Styles */
 section p {
-
+    text-align: center;
 }
 
 /* link styles */
 section a {
     text-decoration: transparent;
     color: #dab72b;
-    transition: all ease .3s;
+    transition: all ease .2s;
 }
 section a:hover {
     text-decoration: underline;
     color:#a3a0ff;
-    transition: all ease .3s;
+    transition: all ease .2s;
 }
 
 /* List Styles */
@@ -339,6 +377,7 @@ dl dd{
 
 .card:hover {
     box-shadow: 6px 6px 16px #797f99;
+    background-color: rgb(198, 178, 118);
     .card-content {
         color:#261900;
         transition: all ease .3s;
@@ -351,6 +390,12 @@ dl dd{
     color: rgb(255, 255, 255);
     background-color: #745700;
     transition: all ease .3s;
+}
+
+.card:hover img {
+    border: 5px solid rgb(255, 255, 255);
+    border-left-width: 0rem;
+    border-right-width: 0rem;
 }
 
 /* Contact Page Styles */
@@ -366,24 +411,44 @@ dl dd{
     border-radius: 1rem;
     border:#04046d 1px solid;
     box-shadow:  6px 6px 8px #9ca1ba;
+    transition: all ease .3s;
 }
 
 .contact p {
     margin-top:-5px;
     color: #5A5183;
+    transition: all ease .1s;
+}
+
+.contact h1 {
+    transition: all ease .2s;
+}
+
+.contact:hover {
+    transform: scale(1.02);
+    transition: all ease .3s;
+    border-color: #817700;
+    box-shadow:  6px 6px 16px #a7acc7;
+}
+
+.contact:hover h1{
+    color:#817700;
+
+}
+
+.contact:hover p{
+    color:#968c22;
+    transition: all ease .2s;
 }
 
 form {
     background-color: #a4a8da;
     border-radius: .5rem;
     margin:2rem;
-    padding:1rem;
-    justify-content: flex-start;
-    align-items: flex-start;
+    padding:1rem 1rem 1rem 1.3rem;
     box-sizing: border-box;
     line-height: 1.5;
-    display:flex;
-    flex-flow:column nowrap; 
+    transition: all ease .1s;
 }
 
 form input, form textarea {
@@ -392,13 +457,18 @@ form input, form textarea {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: none;
-    margin:.2rem .2rem .2rem rem;
+    margin:.2rem .2rem .2rem 0rem;
     padding: .5rem;
     border:#332181 1px solid;
     background-color: rgb(241, 241, 255);
+    transition: all ease .1s;
 }
 
 form input:focus, form textarea:focus {
+    background-color: rgb(226, 250, 255);
+    color:#04046d;
+    transform: scale(1.03);
+    transition: all ease .1s;
 
 }
 
@@ -419,7 +489,7 @@ form button:hover {
     color:white;
     border:#776bbe 1px solid;
     cursor:pointer;
-    transform: scale(1.05);
+    transform: scale(1.07);
     box-shadow: 0px 0px 3px 1px #ffffff;
     transition: ease .3s;
 }

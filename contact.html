@@ -30,26 +30,29 @@
 
         <div class="form">
             <form method="POST" action="https://formsubmit.co/b45e062c4225ec1aa00844ea90e4727b">
-                <div class="name">
-                    <label for="name">Name:</label> <br>
-                    <input type="text" id="name" name="name" placeholder="name" required> <br><br>
-                </div>
+                <div class="form_container">
+                    <div class="name">
+                        <label for="name">Name:</label> <br>
+                        <input type="text" id="name" name="name" placeholder="name" required> <br><br>
+                    </div>
 
-                <div class="email">
-                    <label for="email">Email:</label> <br>
-                    <input type="email" id="email" name="email" placeholder="email address" required> <br><br>
-                </div>
+                    <div class="email">
+                        <label for="email">Email:</label> <br>
+                        <input type="email" id="email" name="email" placeholder="email address" required> <br><br>
+                    </div>
 
-                <div class="message">
-                    <label for="message">Message:</label> <br>
-                    <textarea rows="6" id="message" name="message" placeholder="message"></textarea> <br>                
-                    <button type="submit">Send</button>
+                    <div class="message">
+                        <label for="message">Message:</label> <br>
+                        <textarea rows="6" id="message" name="message" placeholder="message"></textarea> <br>                
+                    </div>
+                    <div class="form_button">
+                        <button type="submit">Send</button>
+                    </div>
+                    <!-- remove captcha redirection after sending email -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- redirects to thankyou page after sending email -->
+                    <input type="hidden" name="_next" value="https://ttn64681.github.io/thankyou.html">
                 </div>
-
-                <!-- remove captcha redirection after sending email -->
-                <input type="hidden" name="_captcha" value="false">
-                <!-- redirects to thankyou page after sending email -->
-                <input type="hidden" name="_next" value="https://ttn64681.github.io/thankyou.html">
             </form>
         </div>
 
