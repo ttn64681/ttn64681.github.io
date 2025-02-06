@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* General Styles */
 body {
     margin: 0;
@@ -44,11 +48,22 @@ nav a:hover {
     transition: all ease-in-out .2s;
 }
 
+.right_links {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_links p {
+    margin: 1rem 1rem 0rem 2rem
+}
+
 /* Footer Styles */
 footer {
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-flow: row nowrap;
     background-color: #362E54;
     padding: 1rem;
     color:#b2bdf0;
@@ -72,6 +87,10 @@ footer a:hover {
     color: #c6ad62;
     animation: ease;
     transition: all ease-in-out .2s;
+
+footer p {
+    padding:1rem;
+}
 }
 
 #linkedin {
@@ -174,6 +193,12 @@ section {
     background-color:#9aa5d5;
     border-radius: 0rem 3rem 0rem 3rem;
     box-shadow: 10px 10px #362E54;
+    transition: all ease .3s;
+}
+
+.education:hover {
+    transform: scale(1.02);
+    transition: all ease .3s;
 }
 
 .honors {
@@ -184,6 +209,12 @@ section {
     border-radius:3rem 0rem;
     background-color:rgb(243, 245, 253);
     box-shadow: 10px 10px rgb(79, 59, 106);
+    transition: all ease .3s;
+}
+
+.honors:hover {
+    transform: scale(1.02);
+    transition: all ease .3s;
 }
 
 .skills {
@@ -196,6 +227,12 @@ section {
     text-align: start;
     color: #382f00;
     box-shadow: 10px 10px #412d0b;
+    transition: all ease .3s;
+}
+
+.skills:hover {
+    transform: scale(1.02);
+    transition: all ease .3s;
 }
 
 .experience {
@@ -209,6 +246,12 @@ section {
     border-radius:0rem 3rem;
     color:#e7efff;
     box-shadow: 10px 10px white;
+    transition: all ease .3s;
+}
+
+.experience:hover {
+    transform: scale(1.02);
+    transition: all ease .3s;
 }
 
 /* Section Headings */
@@ -347,10 +390,11 @@ dl dd{
     background-color: rgb(198, 178, 118);
     .card-content {
         color:#261900;
-        transition: all ease .3s;
+        transition: ease .5s;
     }
     transform: scale(1.023);
     transition: all ease .5s;
+    transition: transform ease .5s;
 }
 
 .card:hover h3 {
@@ -363,6 +407,8 @@ dl dd{
     border: 5px solid rgb(255, 255, 255);
     border-left-width: 0rem;
     border-right-width: 0rem;
+    filter: brightness(1.1);
+    transition: all ease .3s;
 }
 
 /* Contact Page Styles */
@@ -502,6 +548,12 @@ form button:hover {
         margin-bottom: 0px;
     }
 
+    .right_links {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
     .splash {
         
     }
@@ -549,10 +601,6 @@ form button:hover {
     
     form button {
         width:100%;
-    }
-
-    footer {
-        margin-top: 2rem;
     }
 
   }

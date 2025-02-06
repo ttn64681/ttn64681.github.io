@@ -13,16 +13,21 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Thai Tam-Minh Nguyen</title>
 </head>
+
 <body>
 
     <nav>
         <p>Thai T. Nguyen</p>
-        <p><a href="contact.html">Contact Thai</a></p>
+        <div class="right_links">
+            <p><a href="#skills">Skills</a></p>
+            <p><a href="#projects">Projects</a></p>
+            <p><a href="contact.html">Contact Thai</a></p>
+        </div>
     </nav>
 
     <section class="splash">
         <div id="splash_name">
-            <h1>Thai Tam-Minh Nguyen</h1>
+            <h1 id="splash_name">Thai Tam-Minh Nguyen</h1>
         </div>
         <div id="headshot">
             <img src="images/headshot.png" alt="headshot" width="200em">
@@ -57,11 +62,11 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <h2>Skills</h2>
         <div class="skills_content">
             <ul>
-                <li><b>Programming languages:</b> <i>C, C++, HTML, CSS, JavaScript</i></li>
+                <li><b>Programming languages:</b> <i>Java, C, C++, HTML, CSS, JavaScript</i></li>
                 <li><b>Frameworks / Libraries:</b> <i>Node.js, React</i></li>
                 <li><b>Software:</b> <i>VS Code, Eclipse, Emacs</i></li>
             </ul>
@@ -80,7 +85,7 @@
 
     <hr>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div id="projects_header">
             <h2>Projects:</h2>
         </div>
@@ -137,8 +142,19 @@
         &copy;&nbsp;
         <a href="contact.html">Thai T. Nguyen</a>
         &nbsp;&nbsp;&#8226;&nbsp;&nbsp;
-        <a id="linkedin" href="https://www.linkedin.com/in/thai-nguyen-72ab6130b" target="_blank" rel="noopener noreferrer" title="linkedin"> <i class="fa-brands fa-linkedin"></i> </a>
+        <a id="linkedin" href="https://www.linkedin.com/in/thai-nguyen-72ab6130b" target="_blank" rel="noopener noreferrer" title="linkedin"> 
+            <i class="fa-brands fa-linkedin"></i> 
+        </a>
+        &nbsp;&nbsp;&#8226;&nbsp;&nbsp;
+        <!-- Tracks current Year -->
+         
+        <p id="year"></p>
     </footer>
+
+    <script src="js/script.js" async></script>
+    <script>
+        console.log("Test");
+    </script>
 
 </body>
 </html>
