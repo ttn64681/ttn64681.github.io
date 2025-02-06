@@ -44,3 +44,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
     typewriter();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Typewriter effect on splash name added");
+
+    let contact = document.querySelector("#contact h1");
+    let contactText = contact.textContent;
+    let i = 0;
+    contact.innerText = "";
+
+    function typewriter() {
+        if (i < contactText.length) {
+            contact.textContent += contactText.charAt(i);
+            i++;
+            setTimeout(typewriter, 150);
+        }
+    }
+
+    typewriter();
+});
